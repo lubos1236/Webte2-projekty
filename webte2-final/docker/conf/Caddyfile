@@ -1,0 +1,15 @@
+localhost:80 {
+    encode gzip
+
+    handle /api/* {
+        root * /var/www/public
+        php_fastcgi localhost:9000
+        file_server
+    }
+
+    handle {
+        root * /var/www/dist
+        try_files {path} /index.html
+        file_server
+    }
+}

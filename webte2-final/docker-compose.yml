@@ -1,0 +1,25 @@
+---
+version: '3.3'
+services:
+  database:
+    image: mysql:8-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: final
+      MYSQL_USER: final
+      MYSQL_PASSWORD: final
+
+  web:
+    depends_on:
+      - database
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      tags:
+        - "webte-final:latest"
+      labels:
+        - "sk.stuba.fei.webte.final"
+    ports:
+      - "8880:80"
+    volumes:
+      - ./storage/app:/var/www/storage/app

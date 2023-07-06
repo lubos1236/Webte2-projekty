@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ],
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "paths": {
+      "@/*": [
+        "./frontend/src/*"
+      ]
+    }
+  },
+  "include": [
+    "frontend/src/**/*.ts",
+    "frontend/src/**/*.tsx",
+    "frontend/src/**/*.d.ts"
+  ]
+}
