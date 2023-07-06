@@ -1,4 +1,3 @@
-Databaza
 ![databaza](./db.png)
 
 Test users:
