@@ -1,0 +1,148 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "defaultDescription",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://site238.webte.fei.stuba.sk"
+  } ],
+  "paths" : {
+    "/H5NS32KL12/Zadanie2/api.php/{day}" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "day",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Pondelok"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : { }
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "[{\"id\":18,\"data_id\":2,\"name\":\"Polievka:  x\",\"price\":null,\"day\":\"Pondelok\",\"img\":null},{\"id\":19,\"data_id\":2,\"name\":\"MENU A:  x\",\"price\":null,\"day\":\"Pondelok\",\"img\":null},{\"id\":20,\"data_id\":2,\"name\":\"MENU B:  x\",\"price\":null,\"day\":\"Pondelok\",\"img\":null},{\"id\":21,\"data_id\":2,\"name\":\"MENU C:  x\",\"price\":null,\"day\":\"Pondelok\",\"img\":null},{\"id\":22,\"data_id\":2,\"name\":\"MENU D:  x\",\"price\":null,\"day\":\"Pondelok\",\"img\":null}]"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "https://site238.webte.fei.stuba.sk"
+        } ]
+      }
+    },
+    "/H5NS32KL12/Zadanie2/api.php" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://site238.webte.fei.stuba.sk"
+        } ]
+      },
+      "put" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "price",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "10"
+        }, {
+          "name" : "id",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "type" : "string"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "data_id=2&name=test&price=5&day=test&img=test"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://site238.webte.fei.stuba.sk"
+        } ]
+      },
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "type" : "string"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "data_id=2&name=test&price=5&day=test&img=test"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://site238.webte.fei.stuba.sk"
+        } ]
+      },
+      "delete" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "responses" : {
+          "404" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers" : [ {
+          "url" : "https://site238.webte.fei.stuba.sk"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "https://site238.webte.fei.stuba.sk"
+      } ]
+    }
+  }
+}

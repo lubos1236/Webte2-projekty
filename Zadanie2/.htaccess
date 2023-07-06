@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^api/food$ api.php [L,QSA]
+RewriteRule ^api/food/(\s+)$ api.php?day=$1 [L,QSA]
+RewriteRule ^api/food/(\d+)$/(\s+) api.php?id=$1price=$2 [L,QSA]
+RewriteRule ^api/restaurant/(\d+)$ api.php?id=$1 [L,QSA]
